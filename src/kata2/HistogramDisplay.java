@@ -1,6 +1,6 @@
 package kata2;
 
-public interface HistogramDisplay {
+public interface HistogramDisplay<T> {
     
-    public void show(Histogram histogram);
+    public void show(Histogram<T> histogram);
 }
