@@ -8,7 +8,8 @@ public class ConsoleHistogramDisplay<T> implements HistogramDisplay<T>{
     @Override
     public void show(Histogram<T> histogram) {
         for (T value : histogram) {
-            System.out.println(value + " " + histogram.getCount(value));
-        }        
+            System.out.println(value + " => " + histogram.getCount(value));
+        }
+        System.out.println("");
     }
 }
